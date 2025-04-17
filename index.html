@@ -24,41 +24,84 @@
             </div>
         </header>         
         <!-- Homepage content-->
-        <h1>Welcome to Our Resort</h1>   
-        <h2>Escape to Paradise</h2>
-            <p>Indulge in luxury and breathtaking views at Shangri La Beach Resort.</p>
-            <img src="./images/sunset.jpg" alt="sunset">
-            <h2>Experience Unforgettable Moments</h2>
-        <h3>Private Beach Access</h3>
-            <p>Step onto our pristine, white-sand beach.</p>
-        <h3>Infinity Pool</h3>
-            <p>Relax by our stunning oceanfront infinity pool.</p>
-        <h3>World-Class Spa</h3>
-            <p>Rejuvenate your mind and body at our spa.</p>
-        <h3>Exquisite Dining</h3>
-            <p>Savor culinary delights at our restaurants.</p>
-        
-        <img src="./images/bed.jpg" alt="bed">
-
-        <h2>Our Luxurious Accommodations</h2>
-        <h3>Ocean View Deluxe Room</h3>
-            <p>Enjoy stunning ocean views from your private balcony.</p>    
-            <p><a href="./pages/rooms.html">View Details</a></p>
-        <h3>Beachfront Suite</h3>
-            <p>Step directly onto the sand from your spacious suite.</p>    
-            <p><a href="./pages/rooms.html">View Details</a></p>
-        <h3>Garden View Family Room</h3>
-            <p>Perfect for families, with ample space and garden views.</p>    
-            <p><a href="./pages/rooms.html">View Details</a></p>
-        <h2>What Our Guests Are Saying</h2>
-            <p>"Our stay at Shangri La was absolutely perfect! 
-                The service was impeccable, and the views were breathtaking."</p>
-                <p>- Sarah, New York</p>
-            <p>"The beachfront suite was amazing! Waking up to the 
-                sound of the waves and stepping right onto the sand was incredible."</p>
-                <p>- John B.</p>
-            <p><a href="./pages/testimonies.html">Read More Testimonials</a></p>
-            <!-- Footer -->
+         <!-- Hero Banner -->
+          <section class="hero" style="background-image: url('images/view.jpg');">
+            <div class="hero-content">
+              <h1>Welcome to Our Resort</h1>
+            </div>
+          </section>
+          <div class="centered-text">
+              <h2>Escape to Paradise</h2>
+              <p>Indulge in luxury and breathtaking views at Shangri La Beach Resort.</p>
+          </div>
+            <hr>
+            <section class="info-section">
+                <div class="info-container">
+                  <div class="info-image">
+                    <img src="images/sunset.jpg" alt="sunset beach">
+                  </div>
+                  <div class="info-text">
+                    <h2>Experience Unforgettable Moments</h2>
+                    <h3>Private Beach Access</h3>
+                    <p>Step onto our pristine, white-sand beach.</p>
+                    <h3>Infinity Pool</h3>
+                    <p>Relax by our stunning oceanfront infinity pool.</p>
+                    <h3>World-Class Spa</h3>
+                    <p>Rejuvenate your mind and body at our spa.</p>
+                    <h3>Exquisite Dining</h3>
+                    <p>Savor culinary delights at our restaurants.</p>
+                  </div>
+                </div>
+            </section>
+            <hr>
+            <section class="info-section reverse">
+                <div class="info-container">
+                  <div class="info-image">
+                    <img src="./images/bed.jpg" alt="bed">
+                  </div>
+                  <div class="info-text">
+                    <h2>Our Luxurious Accommodations</h2>
+              
+                    <h3>Ocean View Deluxe Room</h3>
+                    <p>Enjoy stunning ocean views from your private balcony.</p>
+                    <p><a href="./pages/rooms.html">View Details</a></p>
+              
+                    <h3>Beachfront Suite</h3>
+                    <p>Step directly onto the sand from your spacious suite.</p>
+                    <p><a href="./pages/rooms.html">View Details</a></p>
+              
+                    <h3>Garden View Family Room</h3>
+                    <p>Perfect for families, with ample space and garden views.</p>
+                    <p><a href="./pages/rooms.html">View Details</a></p>
+                  </div>
+                </div>
+            </section>
+          <!-- Testimonials -->
+             <hr>
+            <section class="testimonials-slider">
+                <h2>What Our Guests Are Saying</h2>
+                <div class="slider-container">
+                        <button class="arrow left">&#8592;</button>
+                        <div class="testimonial-wrapper">
+                            <div class="testimonial active">
+                                <p>"Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."</p>
+                                <p class="author">- Sarah, New York</p>
+                                </div>
+                                <div class="testimonial">
+                                <p>"The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."</p>
+                                <p class="author">- John B.</p>
+                                </div>
+                                <div class="testimonial">
+                                <p>"The spa was divine. The therapists were so skilled. I left feeling completely rejuvenated."</p>
+                                <p class="author">- Emily R.</p>
+                            </div>
+                        </div>
+                        <button class="arrow right">&#8594;</button>
+                    </div>
+                </div>
+                <p><a href="pages/testimonies.html">Read More Testimonials</a></p>
+              </section>
+          <!-- Footer -->
             <footer class="footer">
                 <div class="footer-content">
                   <div class="footer-section">
@@ -93,7 +136,7 @@
                 </div>
                 <p class="footer-bottom">&copy; 2025 Shangri La Beach Resort. All rights reserved.</p>
             </footer>
-            <!-- Javascript -->
+          <!-- Javascript -->
             <script src="global.js" defer></script>
     </body>
 </html>

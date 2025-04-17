@@ -1,24 +1,137 @@
-/*Hamburger menu style*/
-.hamburger-menu {
-    position: relative;
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.menu-icon {
-    font-size: 30px;
+  
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 70px;
+}
+  
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #05445E;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #cccccc;
+}
+  
+/* Centers logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.logo img {
+    height: 40px;
+    display: block;
+}
+  
+/* Container for hamburger and nav links */
+.menu-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+  
+/* Hamburger icon */
+.menu-toggle {
+    font-size: 28px;
     cursor: pointer;
+    padding-left: 15px;
+    color: #f0f0f0;
 }
-
-#menu-toggle {
-    display: none;
-}
-
-.menu {
+  
+/* Navigation links */
+.nav-links {
     display: none;
     flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    min-width: 150px;
 }
-
-#menu-toggle:checked + .menu-icon + .menu {
+  
+.nav-links.active {
     display: flex;
 }
+  
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    margin: 5px 0;
+    padding: 5px;
+}
+  
+/* Desktop layout */
+@media (min-width: 769px) {
+    .nav-links {
+      top: 60px;
+      right: 10px;
+      align-items: flex-end;
+    }
+}
 
-/*  */
+/* Footer Styles */
+.footer {
+    background-color: #f0f0f0;
+    padding: 30px 20px 10px;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    margin-top: 50px;
+}
+  
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+  
+.footer-section {
+    margin: 15px;
+}
+  
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+  
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-section ul li {
+    margin: 6px 0;
+}
+  
+.footer-section ul a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+}
+  
+.footer-section ul a:hover {
+    color: #0077cc;
+}
+  
+.footer-bottom {
+    font-size: 13px;
+    color: #777777;
+}
+  
